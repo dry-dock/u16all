@@ -1,6 +1,6 @@
 #!/bin/bash -e
 
-echo "================= Installing Riak ==================="
+echo "================= Installing Riak 2.0.7 ==================="
 
 # Install dependencies
 sudo apt-get install -y \

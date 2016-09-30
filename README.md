@@ -14,7 +14,7 @@ Available Services :
 9. rabbitmq 3.6
 10. redis 3.0
 11. rethinkdb 2.3
-12. riak latest
+12. riak 2.0.7
 13. selenium 2.53
 14. sqllite 3
 

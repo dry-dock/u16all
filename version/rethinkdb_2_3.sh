@@ -1,5 +1,7 @@
 #!/bin/bash -e
 
+echo "================= Installing RethinkDB ==================="
+
 # Install the dependencies
 sudo apt-get install -y \
   m4 \

@@ -1,8 +1,10 @@
 #!/bin/bash -e
 
+echo "=========== Installing neo4j 3.0.6 ==============="
+
 VERSION=3.0.6
 
-# # Install prerequisites
+# Install prerequisites
 sudo apt-get install -y lsof
 
 # Install Neo4j

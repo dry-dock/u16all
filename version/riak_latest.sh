@@ -1,5 +1,7 @@
 #!/bin/bash -e
 
+echo "================= Installing Riak ==================="
+
 # Install dependencies
 sudo apt-get install -y \
   build-essential \

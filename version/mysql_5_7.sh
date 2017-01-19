@@ -22,9 +22,15 @@ chgrp -R mysql .
 echo "================= Configuring MySQL ==================="
 bin/mysqld --initialize --user=mysql
 bin/mysql_ssl_rsa_setup
-chown -R root .
-chown -R mysql data mysql-files
 ln -sf /usr/local/mysql/bin/mysqld_safe /usr/bin/mysqld_safe
+
+#create and assign permissions to directories
+mkdir -p /var/log/mysql
+chown -R mysql /var/log/mysql
+
+mkdir -p /var/run/mysqld
+chown -R mysql /var/run/mysqld
+chown -R mysql /usr/local/mysql
 
 echo "=========== Installing mysql clients 5.7 ==============="
 apt-get install mysql-client-5.7

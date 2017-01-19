@@ -17,7 +17,8 @@ start_service() {
 # Function to STOP
 #
 stop_service() {
-  mysqladmin shutdown
+  sleep 10
+  sudo kill -9 $(pgrep -f mysql)
 }
 
 source /u16all/test/function_start_generic.sh

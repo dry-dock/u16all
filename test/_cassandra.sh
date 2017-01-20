@@ -17,7 +17,7 @@ start_service() {
 # Function to STOP
 #
 stop_service() {
-  sudo su -c "kill -9 `ps aux | grep [c]assandra | awk '{print $2}'`";
+  sudo kill -9 `ps aux | grep [c]assandra | awk '{print $2}'`
 }
 
 source /u16all/test/function_start_generic.sh

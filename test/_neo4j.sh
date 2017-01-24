@@ -1,7 +1,7 @@
 #!/bin/bash -e
 # Begin service ENV variables
 export SHIPPABLE_NEO4J_PORT=7474;
-export SHIPPABLE_NEO4J_BINARY="/usr/bin/neo4j";
+export SHIPPABLE_NEO4J_BINARY="/var/lib/neo4j/bin/neo4j";
 export SHIPPABLE_NEO4J_CMD="$SHIPPABLE_NEO4J_BINARY start";
 export SHIPPABLE_NEO4J_LOG="/var/log/neo4j/neo4j.log"
 

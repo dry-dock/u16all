@@ -1,6 +1,6 @@
 #!/bin/bash -e
 
-echo "================= Installing Riak 2.0.7 ==================="
+echo "================= Installing Riak 2.2.0 ==================="
 
 # Install dependencies
 sudo apt-get install -y \
@@ -17,7 +17,7 @@ sudo apt-get install -y \
   logrotate
 
 # Install Riak
-wget http://s3.amazonaws.com/downloads.basho.com/riak/2.0/2.0.7/ubuntu/trusty/riak_2.0.7-1_amd64.deb
+wget http://s3.amazonaws.com/downloads.basho.com/riak/2.2/2.2.0/ubuntu/trusty/riak_2.2.0-1_amd64.deb
 sudo dpkg -i riak*.deb
 rm riak*.deb
 

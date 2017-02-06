@@ -2,6 +2,9 @@
 
 sudo chmod 1777 /tmp
 
+#install vim for easy debugging
+apt-get update && apt-get install vim
+
 for file in /u16all/version/*.sh;
 do
   . $file

@@ -1,12 +1,7 @@
-#!/bin/bash
-
-
-set -e
+#!/bin/bash -e 
 
 # ensure elasticsearch user exists
-useradd elastisearch
-groupadd elasticsearch
-useradd -g elasticsearch elasticsearch
+useradd elasticsearch
 
 # grab gosu for easy step-down from root
 GOSU_VERSION=1.7
@@ -24,10 +19,10 @@ ELASTICSEARCH_VERSION=5.1.2
 cd /usr/local/
 
 echo "================= Installing ElasticSearch 5.1.2 ==================="
-sudo wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-${ELASTICSEARCH_VERSION}.tar.gz
-sudo tar xzf elasticsearch-${ELASTICSEARCH_VERSION}.tar.gz -C /usr/local && sudo rm -f elasticsearch-${ELASTICSEARCH_VERSION}.tar.gz
-sudo mv elasticsearch-${ELASTICSEARCH_VERSION} elasticsearch
-sudo ln -s /usr/local/elasticsearch/bin/elasticsearch /usr/local/bin/elasticsearch
+wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-${ELASTICSEARCH_VERSION}.tar.gz
+tar xzf elasticsearch-${ELASTICSEARCH_VERSION}.tar.gz -C /usr/local && rm -f elasticsearch-${ELASTICSEARCH_VERSION}.tar.gz
+mv elasticsearch-${ELASTICSEARCH_VERSION} elasticsearch
+cp /u16all/version/elasticsearch_config /usr/local/bin/
 
 #PATH=/usr/local/elasticsearch/bin:$PATH
 
@@ -45,7 +40,7 @@ for path in \
 	./config/scripts \
 ; do \
 	mkdir -p "$path";
-	chown -R elasticsearch:elasticsearch "$path";
+	chown -R elasticsearch "$path";
 done
 
 
@@ -57,5 +52,7 @@ for path in \
 	/usr/local/elasticsearch/data \
 	/usr/local/elasticsearch/logs \
 ; do
-	chown -R elasticsearch:elasticsearch "$path"
+	chown -R elasticsearch "$path"
 done
+
+

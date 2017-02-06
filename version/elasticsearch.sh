@@ -22,7 +22,7 @@ echo "================= Installing ElasticSearch 5.1.2 ==================="
 wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-${ELASTICSEARCH_VERSION}.tar.gz
 tar xzf elasticsearch-${ELASTICSEARCH_VERSION}.tar.gz -C /usr/local && rm -f elasticsearch-${ELASTICSEARCH_VERSION}.tar.gz
 mv elasticsearch-${ELASTICSEARCH_VERSION} elasticsearch
-cp /u16all/version/elasticsearch_config /usr/local/bin/
+cp /u16all/version/elasticsearch_utils/elasticsearch /usr/local/bin/
 
 #PATH=/usr/local/elasticsearch/bin:$PATH
 
@@ -30,7 +30,7 @@ mkdir -p /usr/local/elasticsearch/logs
 mkdir -p /usr/local/elasticsearch/tmp
 
 cd /usr/local/elasticsearch
-cp -r /u16all/version/elasticsearch/config /usr/local/elasticsearch/config
+cp -r /u16all/version/elasticsearch_utils/config /usr/local/elasticsearch/config
 
 for path in \
 	./tmp \

@@ -51,7 +51,9 @@ elif [ $service_cmd = 'stop' ]
 then
   echo "================= Stopping Elasticsearch ==================="
   printf "\n"
-  kill -9 `ps aux | grep elasticsearch | awk '{print $2}'`
+  # This script is also called elasticsearch. We need to make sure we don't kill
+  # ourselves
+  kill -9 `ps aux | grep elasticsearch | grep -v shippable_service | awk '{print $2}'`
 else
   echo "Failed to execute the action"
 fi

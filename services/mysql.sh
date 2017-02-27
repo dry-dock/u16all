@@ -51,7 +51,7 @@ then
   echo "================= Stopping mysql ==================="
   printf "\n"
   sleep 10
-  sudo kill -9 $(pgrep -f mysql)
+  mysqladmin shutdown
   printf "\n\n"
 else
   echo "Failed to execute the action"

@@ -15,6 +15,6 @@ Available Services :
 10. redis 3.0
 11. rethinkdb 2.3
 12. riak 2.0.7
-13. selenium 2.53
+13. selenium 3.4.0
 14. sqllite 3
 

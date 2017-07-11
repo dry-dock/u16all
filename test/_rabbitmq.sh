@@ -16,7 +16,7 @@ start_service() {
 # Function to STOP
 #
 stop_service() {
-  true;
+  sudo -u rabbitmq rabbitmqctl shutdown
 }
 
 source /u16all/test/function_start_generic.sh

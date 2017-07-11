@@ -1,6 +1,6 @@
 #!/bin/bash -e
 
-MEM_VERSION=1.4.34
+MEM_VERSION=1.4.39
 LIB_VERSION=1.0.18
 
 echo "================= Installing MemCached Prereqs ==================="

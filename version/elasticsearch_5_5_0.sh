@@ -14,11 +14,11 @@ rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc
 chmod +x /usr/local/bin/gosu
 gosu nobody true
 
-ELASTICSEARCH_VERSION=5.1.2
+ELASTICSEARCH_VERSION=5.5.0
 #setup elasticsearch
 cd /usr/local/
 
-echo "================= Installing ElasticSearch 5.1.2 ==================="
+echo "================= Installing ElasticSearch 5.5.0 ==================="
 wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-${ELASTICSEARCH_VERSION}.tar.gz
 tar xzf elasticsearch-${ELASTICSEARCH_VERSION}.tar.gz -C /usr/local && rm -f elasticsearch-${ELASTICSEARCH_VERSION}.tar.gz
 mv elasticsearch-${ELASTICSEARCH_VERSION} elasticsearch

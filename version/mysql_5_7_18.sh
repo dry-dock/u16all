@@ -7,12 +7,12 @@ apt-get install libaio1
 mkdir -p /etc/mysql
 mkdir /var/log/mysql
 
-echo "=========== Downloading mysql 5.7.15 ==============="
+echo "=========== Downloading mysql 5.7.18 ==============="
 cd /usr/local
-wget -O mysql-5.7.17-linux-glibc2.5-x86_64.tar.gz https://dev.mysql.com/get/Downloads/MySQL-5.7/mysql-5.7.17-linux-glibc2.5-x86_64.tar.gz
-tar xvfz mysql-5.7.17-linux-glibc2.5-x86_64.tar.gz
-mv mysql-5.7.17-linux-glibc2.5-x86_64 mysql
-rm mysql-5.7.17-linux-glibc2.5-x86_64.tar.gz
+wget -O mysql-5.7.18-linux-glibc2.5-x86_64.tar.gz https://dev.mysql.com/get/Downloads/MySQL-5.7/mysql-5.7.18-linux-glibc2.5-x86_64.tar.gz
+tar xvfz mysql-5.7.18-linux-glibc2.5-x86_64.tar.gz
+mv mysql-5.7.18-linux-glibc2.5-x86_64 mysql
+rm mysql-5.7.18-linux-glibc2.5-x86_64.tar.gz
 cd mysql
 mkdir mysql-files
 chmod 750 mysql-files

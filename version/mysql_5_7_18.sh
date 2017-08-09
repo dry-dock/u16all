@@ -24,10 +24,6 @@ bin/mysqld --initialize-insecure --user=mysql
 bin/mysql_ssl_rsa_setup
 ln -sf /usr/local/mysql/bin/mysqld_safe /usr/bin/mysqld_safe
 
-
-# fixes support issue https://github.com/Shippable/support/issues/3736
-ln -s /var/run/mysqld/mysqld.sock /tmp/mysql.sock
-
 #create and assign permissions to directories
 mkdir -p /var/log/mysql
 chown -R mysql /var/log/mysql

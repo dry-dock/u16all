@@ -1,4 +1,4 @@
-#!/bin/bash -e 
+#!/bin/bash -e
 
 # ensure elasticsearch user exists
 useradd elasticsearch
@@ -14,7 +14,7 @@ rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc
 chmod +x /usr/local/bin/gosu
 gosu nobody true
 
-ELASTICSEARCH_VERSION=5.5.1
+ELASTICSEARCH_VERSION=5.6.2
 #setup elasticsearch
 cd /usr/local/
 
@@ -54,5 +54,3 @@ for path in \
 ; do
 	chown -R elasticsearch "$path"
 done
-
-

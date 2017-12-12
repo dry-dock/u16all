@@ -1,4 +1,4 @@
-FROM drydock/u16:{{%TAG%}}
+FROM drydock/u16:master
 
 ADD . /u16all
 

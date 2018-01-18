@@ -14,7 +14,7 @@ rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc
 chmod +x /usr/local/bin/gosu
 gosu nobody true
 
-ELASTICSEARCH_VERSION=5.6.2
+ELASTICSEARCH_VERSION=6.1.1
 #setup elasticsearch
 cd /usr/local/
 
@@ -23,8 +23,6 @@ wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-${ELASTI
 tar xzf elasticsearch-${ELASTICSEARCH_VERSION}.tar.gz -C /usr/local && rm -f elasticsearch-${ELASTICSEARCH_VERSION}.tar.gz
 mv elasticsearch-${ELASTICSEARCH_VERSION} elasticsearch
 cp /u16all/version/elasticsearch_utils/elasticsearch /usr/local/bin/
-
-#PATH=/usr/local/elasticsearch/bin:$PATH
 
 mkdir -p /usr/local/elasticsearch/logs
 mkdir -p /usr/local/elasticsearch/tmp
@@ -42,8 +40,6 @@ for path in \
 	mkdir -p "$path";
 	chown -R elasticsearch "$path";
 done
-
-
 
 # Drop root privileges if we are running elasticsearch
 # allow the container to be started with `--user`

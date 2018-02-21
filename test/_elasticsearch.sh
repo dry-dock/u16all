@@ -5,7 +5,7 @@ export SHIPPABLE_ES_PORT=9200;
 export SHIPPABLE_ES_BINARY="/usr/local/bin/elasticsearch";
 #export SHIPPABLE_ES_USER=elasticsearch
 export SHIPPABLE_ES_TMP=/usr/local/elasticsearch/tmp
-export SHIPPABLE_ES_CMD="/usr/local/bin/elasticsearch -Ecluster.name=$SHIPPABLE_ES_CLUSTER_NAME";
+export SHIPPABLE_ES_CMD="$SHIPPABLE_ES_BINARY -Ecluster.name=$SHIPPABLE_ES_CLUSTER_NAME";
 # End service ENV variables
 
 #

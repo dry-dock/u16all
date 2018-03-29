@@ -8,7 +8,7 @@ apt-get install numactl
 mkdir -p /etc/mysql
 mkdir /var/log/mysql
 
-MYSQL_VERSION=5.7.20
+MYSQL_VERSION=5.7.21
 echo "=========== Downloading mysql $MYSQL_VERSION ==============="
 cd /usr/local
 wget -O mysql-"$MYSQL_VERSION"-linux-glibc2.12-x86_64.tar.gz https://dev.mysql.com/get/Downloads/MySQL-5.7/mysql-"$MYSQL_VERSION"-linux-glibc2.12-x86_64.tar.gz

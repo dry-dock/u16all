@@ -22,7 +22,7 @@ chown -R mysql .
 chgrp -R mysql .
 
 echo "================= Configuring MySQL ==================="
-bin/mysqld --initialize-insecure --user=mysql
+bin/mysqld --initialize-insecure --explicit_defaults_for_timestamp --user=mysql
 bin/mysql_ssl_rsa_setup
 ln -sf /usr/local/mysql/bin/mysqld_safe /usr/bin/mysqld_safe
 

@@ -13,4 +13,4 @@ sudo apt-get update
 sudo apt-get remove couchdb couchdb-bin couchdb-common -yf
 
 echo "couchdb couchdb/mode select none" | debconf-set-selections
-DEBIAN_FRONTEND=noninteractive apt-get install -y --force-yes couchdb="$VERSION"*
+DEBIAN_FRONTEND=noninteractive apt-get install -y couchdb="$VERSION"*

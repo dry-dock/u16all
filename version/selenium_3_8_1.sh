@@ -28,7 +28,10 @@ sudo apt-get install -y \
 
 echo "================= Installing Chrome ==================="
 sudo wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-sudo dpkg -i google-chrome-stable_current_amd64.deb
+# Allow this to fail as dpkg might not install all the required
+# packages. The next apt-get install -f will take care of it.
+# From https://unix.stackexchange.com/questions/159094/how-to-install-a-deb-file-by-dpkg-i-or-by-apt
+sudo dpkg -i google-chrome-stable_current_amd64.deb || true
 sudo apt-get install -y -f
 sudo rm -f google-chrome-stable_current_amd64.deb
 

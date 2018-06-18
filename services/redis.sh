@@ -37,12 +37,12 @@ start_generic_service() {
 }
 if [ "$1" = "start" ]
 then
-  echo "================= Starting redismq ==================="
+  echo "================= Starting redis ==================="
   printf "\n"
   start_generic_service "redis" "$SHIPPABLE_REDIS_BINARY" "$SHIPPABLE_REDIS_CMD" "$SHIPPABLE_REDIS_PORT";
 elif [ "$1" = "stop" ]
 then
-  echo "================= Stopping reddismq ==================="
+  echo "================= Stopping redis ==================="
   printf "\n"
   su -c "redis-cli shutdown";
 else

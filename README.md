@@ -15,4 +15,4 @@ Available Services :
 10. redis 4.0.9
 12. riak 2.2.3
 13. selenium 3.13.0
-14. sqllite 3.24.0
+14. sqllite 3.22.0

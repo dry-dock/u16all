@@ -9,7 +9,7 @@ Available Services :
 4. memcached 1.5.9
 5. mongodb 4.0.0
 6. mysql 5.7.22
-7. neo4j 3.4.3
+7. neo4j 3.3.6
 8. postgres 10
 9. rabbitmq 3.6.15
 10. redis 4.0.9

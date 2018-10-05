@@ -5,7 +5,7 @@ Available Services :
 
 1. cassandra 3.11
 2. couchdb 2.2.0
-3. elasticsearch 6.4.0
+3. elasticsearch 6.4.2
 4. memcached 1.5.10
 5. mongodb 4.0.2
 6. mysql 5.7.23

@@ -13,7 +13,7 @@ cd /u16all && cp -rf neo4j-server.properties /var/lib/neo4j/conf/
 echo "================= Adding mysql cnf ==================="
 cd /u16all && cp -rf my.cnf /etc/mysql/my.cnf
 
-POSTGRES_VERSION=10
+POSTGRES_VERSION=10.5
 echo "================= Adding PostgreSQL cnf ==================="
 cd /u16all && cp -rf pg_hba.cnf /etc/postgresql/"$POSTGRES_VERSION"/main/pg_hba.conf
 

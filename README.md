@@ -12,7 +12,7 @@ Available Services :
 7. neo4j 3.3.9
 8. postgres 10
 9. rabbitmq 3.6.15
-10. redis 5.0.0
+10. redis 5.0.2
 12. riak 2.2.3
 13. selenium 3.141.5
 14. sqllite 3.22.0

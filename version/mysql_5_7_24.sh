@@ -18,8 +18,9 @@ rm mysql-"$MYSQL_VERSION"-linux-glibc2.12-x86_64.tar.gz
 cd mysql
 mkdir mysql-files
 chmod 750 mysql-files
-chown -R mysql .
-chgrp -R mysql .
+#chown -R mysql .
+#chgrp -R mysql .
+chown -R mysql /usr/local/mysql && chgrp -R mysql /usr/local/mysql
 
 echo "================= Configuring MySQL ==================="
 bin/mysqld --initialize-insecure --explicit_defaults_for_timestamp --user=mysql

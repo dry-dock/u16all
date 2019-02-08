@@ -4,6 +4,7 @@ VERSION=2.3.0
 echo "================= Installing CouchDB $VERSION ==================="
 
 # Install CouchDB
+curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
 sudo apt-get install software-properties-common -y
 echo "deb https://apache.bintray.com/couchdb-deb `lsb_release -cs` main" \
     | sudo tee -a /etc/apt/sources.list

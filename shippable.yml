@@ -1,0 +1,14 @@
+language: none 
+
+services:
+  - mysql 
+
+build:
+  pre_ci:
+    - docker build -t=drydock/u16all:dev .
+  pre_ci_boot:
+    image_name: drydock/u16all
+    image_tag: dev
+    pull: false
+  ci:
+    - mysql --version

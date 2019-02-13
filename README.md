@@ -5,12 +5,12 @@ Available Services :
 
 1. cassandra 3.11
 2. couchdb 2.3.0
-3. elasticsearch 6.5.4
+3. elasticsearch 6.6.0
 4. memcached 1.5.12
-5. mongodb 4.0.5
-6. mysql 5.7.24
-7. neo4j 3.3.9
-8. postgres 10
+5. mongodb 4.0.6
+6. mysql 5.7.25
+7. neo4j 3.5.3
+8. postgres 11
 9. rabbitmq 3.6.15
 10. redis 5.0.3
 12. riak 2.2.3

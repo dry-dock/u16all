@@ -1,6 +1,6 @@
 #!/bin/bash -e
 
-MONGO_VERSION=4.0.5
+MONGO_VERSION=4.0.6
 echo "================= Installing Mongodb $MONGO_VERSION ==================="
 
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 9DA31620334BD75D9DCB49F368818C72E52529D4
